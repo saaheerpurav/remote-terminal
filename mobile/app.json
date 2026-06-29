@@ -1,11 +1,17 @@
 {
   "expo": {
-    "name": "RemoteTerminal",
+    "name": "Remote Terminal",
     "slug": "remote-terminal",
     "version": "0.1.0",
     "orientation": "default",
     "scheme": "remoteterminal",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -16,10 +22,15 @@
     },
     "android": {
       "package": "dev.remoteterminal.app",
-      "softwareKeyboardLayoutMode": "resize"
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      }
     },
     "web": {
-      "bundler": "metro"
+      "bundler": "metro",
+      "favicon": "./assets/icon.png"
     }
   }
 }
