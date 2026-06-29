@@ -1,0 +1,21 @@
+{
+  "name": "remote-terminal",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Remote monitor and control for Codex and Claude Code sessions.",
+  "workspaces": [
+    "bridge",
+    "mobile"
+  ],
+  "scripts": {
+    "bridge:build": "npm run build -w @remote-terminal/bridge",
+    "bridge:dev": "npm run dev -w @remote-terminal/bridge",
+    "rmterm": "node bridge/dist/index.js",
+    "rmterm:codex": "node bridge/dist/index.js run codex",
+    "rmterm:claude": "node bridge/dist/index.js run claude",
+    "rmterm:status": "node bridge/dist/index.js status",
+    "rmterm:stop": "node bridge/dist/index.js stop",
+    "mobile:start": "npm run start -w @remote-terminal/mobile",
+    "typecheck": "npm run typecheck -w @remote-terminal/bridge && npm run typecheck -w @remote-terminal/mobile"
+  }
+}

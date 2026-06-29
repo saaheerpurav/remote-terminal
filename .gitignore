@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.expo/
+.expo-shared/
+coverage/
+*.log
+.env
+.DS_Store
+Thumbs.db
+

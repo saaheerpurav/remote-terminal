@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "RemoteTerminal",
+    "slug": "remote-terminal",
+    "version": "0.1.0",
+    "orientation": "default",
+    "scheme": "remoteterminal",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "requireFullScreen": true,
+      "bundleIdentifier": "dev.remoteterminal.app"
+    },
+    "android": {
+      "package": "dev.remoteterminal.app",
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
